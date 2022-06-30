@@ -22,7 +22,7 @@ node {
 
     stage('Push image DOcker hub') {
         
-        docker.withRegistry('https://registry.hub.docker.com', 'moezgDocker') {
+        docker.withRegistry('https://registry.hub.docker.com', '2fde6752-b7e4-4301-9834-e8683860bd5e') {
             app.push("${env.BUILD_NUMBER}")
         }
     }
